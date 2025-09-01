@@ -1,5 +1,5 @@
 module Saad
-  class Coordinated
+  class Competitive
     def self.specify_measurements(a, b, c, d, e, f)
       @player_mechanic        = a
       @player_attribute       = b
@@ -231,7 +231,7 @@ module Saad
     end
   end
   
-  class Competitive
+  class Coordinated
     def self.specify_measurements(a, b, c, d, e, f)
       @player_mechanic        = a
       @player_attribute       = b
@@ -490,5 +490,5 @@ size_limit.times do
   Saad::Coordinated.evaluate_enemy
   Saad::Coordinated.mechanic_prediction
 
-  Saad::Coordinated.increment_inputs
+  Saad::Coordinated.decrement_inputs
 end
