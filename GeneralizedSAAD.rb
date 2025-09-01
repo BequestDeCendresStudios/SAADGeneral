@@ -130,3 +130,9 @@ end
 Saad.starting_stats("Matraque",       "Player",
                     "Matraque", "Gribatomaton",
                     "Matraque",        "Enemy")
+
+Saad.evaluate_player
+Saad.evaluate_gribatomaton
+Saad.evaluate_enemy
+
+Saad.mechanic_prediction
