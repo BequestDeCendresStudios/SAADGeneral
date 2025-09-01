@@ -234,6 +234,7 @@ class Saad
   end
 end
 
+print "How many cycles? << "; size_limit = gets.chomp.to_i
 
 Saad.specify_measurements("Matraque",       "Player",
                           "Matraque", "Gribatomaton",
@@ -241,14 +242,23 @@ Saad.specify_measurements("Matraque",       "Player",
 
 Saad.starting_stats
 
+cycle = 0
+
 Saad.evaluate_player
 Saad.evaluate_gribatomaton
 Saad.evaluate_enemy
 
 Saad.mechanic_prediction
 
-Saad.decrement_inputs
+size_limit.times do
+  cycle = cycle + 1
+  
+  puts "~~~Cycle #{cycle}"
 
-Saad.evaluate_player
-Saad.evaluate_gribatomaton
-Saad.evaluate_enemy
+  Saad.evaluate_player
+  Saad.evaluate_gribatomaton
+  Saad.evaluate_enemy
+  Saad.mechanic_prediction
+
+  Saad.decrement_inputs
+end
