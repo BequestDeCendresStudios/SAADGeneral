@@ -1,9 +1,7 @@
 # Security Policy
 
 ## Supported Versions
-
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+This software currently uses Ruby version 3.2.3
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -11,9 +9,4 @@ currently being supported with security updates.
 | < 3.2.3 | :x:                |
 
 ## Reporting a Vulnerability
-
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Working on an alternative forum or place to go to report issues.
